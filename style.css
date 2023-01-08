@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.532),rgba(0, 0, 0, 0.657)), url(./team.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.form-content{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 35px 40px;
+}
+.form-content h1{
+    color: #3d238a;
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: 'Roboto';
+}
+
+.form-content h1::after{
+    content: '';
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #3d238a;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.input-item{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-item i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: left;
+    font-size: 15px;
+}
+form p a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: #3d238a;
+    letter-spacing: 0.4px;
+}
+
+.btn-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-item button{
+    flex-basis: 46%;
+    background: #3d238a;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.input-group{
+    height: 260px;
+}
+.btn-item button.disable{
+    background: #eaeaea;
+    color: #555;
+}
